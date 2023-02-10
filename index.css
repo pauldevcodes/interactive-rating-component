@@ -1,0 +1,196 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+
+/* FONTS FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    /* font-size: 15px; */
+    line-height: 1.8;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_container, .thank_you {
+    /* margin: auto; */
+    background-color: hsl(213, 19%, 18%);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 400px;
+}
+
+.main_container img {
+    background-color: hsl(214, 20%, 23%);
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.main_container h1 {
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.main_container p {
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 1rem;
+}
+
+.main_container ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.main_container ul li button {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: hsl(214, 20%, 23%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.2rem 0 0.1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.main_container ul li button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+.main_container ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.btn_submit {
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    padding: 0.6rem 0 0.5rem;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn_submit:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.thank_you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank_you img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank_you p.orange {
+    background-color: hsl(214, 20%, 23%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    padding: 0.15rem 1.4rem 0;
+    font-size: 0.9rem;
+    margin-bottom: 2.2rem;
+}
+
+.thank_you h2 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+}
+
+.thank_you p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1.5rem;
+}
+
+.hid {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.attribution {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
